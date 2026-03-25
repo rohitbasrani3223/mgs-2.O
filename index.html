@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mera Ghar Sansaar 2.0 - Premium Services</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
     <!-- CSS -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
@@ -661,15 +664,46 @@
                 animation: none;
             }
         }
+
+        .founder-socials {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding-bottom: 5px;
+        }
+
+        .founder-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .founder-socials a:hover {
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
+        }
     </style>
     <!-- FontAwesome setup -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <header id="header">
-        <a href="#" class="logo gradient-text">MGS 2.0</a>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="MGS 2.0 Logo" style="height: 40px; width: auto;" onerror="this.outerHTML='<span class=\'gradient-text\'>MGS 2.0</span>'">
+        </a>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -745,6 +779,10 @@
                     <div class="designation">Founder & Co-Founder</div>
                     <p class="bio">With a keen eye for operational excellence, Rohit steers the vision of MGS 2.0 into
                         uncharted territories of innovation.</p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/rohit-bassrani-041b18374" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/rohitbasrani3223" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
 
                 <!-- Sahil Kalar Rai -->
@@ -758,6 +796,10 @@
                     <div class="designation">Founder & Co-Founder</div>
                     <p class="bio">Sahil's passion for seamless user experience helps build the ultimate bridge between
                         service professionals and users.</p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/sahil-kalar-07b161328/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sahilrai8006-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
 
                 <!-- Aryan Sahu -->
@@ -771,6 +813,10 @@
                     <div class="designation">Chief Executive Officer</div>
                     <p class="bio">Aryan leads strategic initiatives, scaling MGS 2.0 to become the undisputed standard
                         in service procurement.</p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/aryan-sahu-109285358/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
 
                 <!-- Om Rajak -->
@@ -784,6 +830,10 @@
                     <div class="designation">Company Secretary</div>
                     <p class="bio">Om ensures corporate governance and ethical excellence are maintained across all
                         aspects of the organization.</p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/om-rajak-399a13374/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
 
                 <!-- Naman Jain -->
@@ -797,6 +847,10 @@
                     <div class="designation">Manager</div>
                     <p class="bio">Naman manages day-to-day operations and ensures that high standards of service are
                         delivered consistently.</p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/naman-jain-7a410b253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -830,10 +884,11 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
@@ -858,7 +913,9 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo gradient-text">MGS 2.0</div>
+            <div class="footer-logo">
+                <img src="logo.png" alt="MGS 2.0 Logo" style="height: 50px; width: auto;" onerror="this.outerHTML='<span class=\'gradient-text\'>MGS 2.0</span>'">
+            </div>
             <p class="copyright">© 2026 Mera Ghar Sansaar 2.0 Pvt Ltd. All rights reserved.</p>
         </div>
     </footer>
